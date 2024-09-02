@@ -21,11 +21,11 @@ app.use("/api", addProductRoute);
 app.use("/api", getProductsRoute);
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("Epic Emporium Server is ON!");
 });
 
 // Start the server
-const PORT = process.env.PORT || 3000;
+const PORT =3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
